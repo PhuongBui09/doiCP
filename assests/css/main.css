@@ -1,0 +1,27 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.btn-success {
+    margin-right: 28px;
+}
+.header {
+    position: relative;
+    border-bottom: 1px solid #dcd6d6;
+    background-color: white;
+}
+h1 {
+    color: #d53d3d;
+    font-size: 30px;
+    padding: 0 15px;
+    margin: 10px 25px;
+}
+.vungChua {
+    margin-top: 50px;
+}
+.text-center {
+    text-align: center;
+    margin-top: 25px;
+}
