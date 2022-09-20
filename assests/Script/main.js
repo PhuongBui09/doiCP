@@ -5,8 +5,6 @@ function tinhToan() {
         document.getElementById('vungChua').innerHTML = '<div class="alert alert-danger">Không được để rỗng!</div>';
     } else if (ca <= 0) {
         document.getElementById('vungChua').innerHTML = '<div id="vungHien" class="contents"><div class="alert alert-danger">Không được nhập số <= 0!</div></div>';
-    } else if(ca != parseFloat(ca)) {
-        document.getElementById('vungChua').innerHTML = '<div id="vungHien" class="contents"><div class="alert alert-danger">Vui lòng sài kí tự "." thay cho kí tự ","!</div></div>';
     } else {
 
         var x = 0.7;
