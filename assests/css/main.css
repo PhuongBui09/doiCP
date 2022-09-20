@@ -2,6 +2,7 @@ body {
     background-image: url(https://wallpaperaccess.com/full/5923902.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
 .content {
     display: flex;
