@@ -68,5 +68,6 @@ function tinhToan() {
 
 function nhapLai() {
     document.getElementById('usr').value = "";
+    document.getElementById('usr').focus();
     document.getElementById('vungHien').style.display = 'none';
 }
