@@ -21,6 +21,9 @@ function tinhToan() {
     var tienTra = 0;
     var tienChuaBu = 0;
 
+    // Lấy theo giá cà phê nhà loại cao
+    var giaCaHienTai = 170000;
+
     if (caLe > 0.08 && caLe < 0.1) {
       lamTronTienLe = Math.ceil(tienLe * 10) / 10;
       soCaPhaiTra = Math.ceil(soCaPhaiTra * 10) / 10;
@@ -35,13 +38,13 @@ function tinhToan() {
       soCaPhaiTra = soCaPhaiTra - 0.1;
     } else if (tienLe > 0.1 && tienLe < 0.5) {
       // Nhân 130000 để ra 13000 ví dụ lamTronTienLe = 0.2 -> 0.5 - 0,2 = 0.3 * 130000 = 39k tức là 1 lạng bù là 13k
-      tienTra = (Math.round((0.5 - lamTronTienLe) * 10) / 10) * 130000;
+      tienTra = (Math.round((0.5 - lamTronTienLe) * 10) / 10) * giaCaHienTai;
       tienPhaiTra += tienTra;
       soCaPhaiTra += 0.5 - lamTronTienLe;
       tienChuaBu = tienPhaiTra - tienTra;
     } else if (tienLe > 0.5 && tienLe < 1) {
       // Nhân 130000 để ra 13000 ví dụ lamTronTienLe = 0.2 -> 0.5 - 0,2 = 0.3 * 130000 = 39k tức là 1 lạng bù là 13k
-      tienTra = (Math.round((1 - lamTronTienLe) * 10) / 10) * 130000;
+      tienTra = (Math.round((1 - lamTronTienLe) * 10) / 10) * giaCaHienTai;
       tienPhaiTra += tienTra;
       soCaPhaiTra += 1 - lamTronTienLe;
       tienChuaBu = tienPhaiTra - tienTra;
