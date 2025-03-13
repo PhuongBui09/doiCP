@@ -11,7 +11,7 @@ function tinhToan() {
     // Số cà phải trả họ
     var soCaPhaiTra = (ca * x * 10) / 10;
     // Tiền công
-    var tienPhaiTra = ca * 20000;
+    var tienPhaiTra = ca * 30000;
     // Số cà lẽ ra ví dụ 4,2 -> 0,2
     var tienLe = soCaPhaiTra - parseInt(soCaPhaiTra);
     var lamTronXuong = Math.floor(soCaPhaiTra * 10) / 10;
@@ -22,7 +22,7 @@ function tinhToan() {
     var tienChuaBu = 0;
 
     // Lấy theo giá cà phê nhà loại cao
-    var giaCaHienTai = 170000;
+    var giaCaHienTai = 180000;
 
     if (caLe > 0.08 && caLe < 0.1) {
       lamTronTienLe = Math.ceil(tienLe * 10) / 10;
