@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web tính đổi hàng</title>
-    <!-- Latest compiled and minified CSS -->
+    <title>Web tính đổi cà phê</title>
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assests/css/main.css">
 </head>
@@ -13,29 +14,30 @@
     <div class="header">
         <h1>Tính toán đổi cà phê</h1>
     </div>
+
     <div class="content">
         <div class="container">
+            <div class="form-group">
+                <label for="usr">Nhập số cà khách đổi (kg):</label>
+                <input type="number" class="form-control" id="usr" placeholder="Ví dụ: 10">
+            </div>
 
             <div class="form-group">
-                <label for="usr">Nhập số cà khách đổi:</label>
-                <input type="number" class="form-control" id="usr">
+                <label for="giaCong">Tiền công mỗi kg (VNĐ):</label>
+                <input type="number" class="form-control" id="giaCong" placeholder="Mặc định: 30000">
             </div>
+
             <p class="text-center">
                 <button type="button" class="btn btn-success" onclick="tinhToan()">Kiểm tra</button>
                 <button type="button" class="btn btn-danger" onclick="nhapLai()">Nhập lại</button>
             </p>
 
-            <div id="vungChua">
-
-            </div>
-        </div>
+            <div id="vungChua"></div>
         </div>
     </div>
 
-    <!-- jQuery library -->
+    <!-- jQuery + Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="./assests/Script/main.js"></script>
 </body>
